@@ -1,0 +1,494 @@
+/*G E N E R A L*/
+
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*H E A D E R - & - N A V*/
+
+header{
+    background-color:hsla(179, 14%, 20%, 1);
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header{
+    max-width: 1200px;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    padding: 15px 20px; 
+}
+.contenedor-header .logo a{
+    font-family:'Righteous';
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(150, 255, 109);
+}
+.contenedor-header ul{
+    display: flex;
+    list-style: none;
+    padding-top: 10px;
+}
+.contenedor-header nav ul li a{
+    text-align: none;
+    margin : 0 5px;
+    color:#fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: .5s;
+}
+.contenedor-header nav ul li a:hover{
+    background-color: hsla(179, 14%, 10%, 1);
+}
+.nav-responsive{
+    width: 36px;
+    height: 46px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: hsla(179, 14%, 65%, 1);
+    display: none;
+}
+
+/*I N I C I O*/
+
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(image/fondo-banner.jpg);
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenedor-banner{
+    padding: 20px;
+    margin: auto;
+    max-width: 350px;
+    text-align: center;
+    border-radius: 40px;
+    background-color:hsla(179, 14%, 20%, 1);
+}
+.inicio .contenedor-banner img{
+    border: 5px solid rgb(150, 255, 109);
+    margin-top: 50px;  
+    display: block;
+    width: 75%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenedor-banner h1{
+    font-family: 'Righteous';
+    margin-top: 20px;
+    font-size: 40px;
+}
+.inicio .contenedor-banner h2{
+    font-size: 18px;
+    font-weight: normal;
+}
+.inicio .contenedor-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 38px;
+    margin: 20px 5px 5px;
+    font-size: 20px;
+    transition: .3;
+}
+.inicio .contenedor-banner .redes a:hover{
+    background-color: hsla(179, 14%, 10%, 1);
+}
+
+/*S O B R E  M I*/
+
+.sobremi{
+    background-color: hsla(179, 14%, 20%, 1);
+    color: #fff;
+    padding: 40px 40px;
+}
+.sobremi .contendor-info{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-family: "Righteous";
+    font-size: 30px;
+    margin: 15px 15px;
+}
+.sobremi p{
+    font-size: 18px;
+    line-height: 1.5rem;
+    padding-bottom: 20px;
+}
+.sobremi .fila{
+    display: flex;
+}
+.sobremi .fila .col{
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    font-family: "Righteous";
+    font-size: 30px;
+    margin: 15px 15px;
+}
+.sobremi .fila .col ul{
+    list-style-type: none;
+}
+.sobremi .fila .col li{
+    padding: 5px 0;
+}
+.sobremi .fila .col li strong{
+    display: inline-block;
+    width: 200px;
+    color: rgb(150, 255, 109);
+}
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin-left: 30px;
+}
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 90px;
+    height: 90px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    background-color: hsla(179, 14%, 65%, 1);
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    transition: .3;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color:hsla(179, 14%, 10%, 1);
+}
+
+.sobremi .fila .col .contenedor-intereses .interes svg{
+    width: 30px;
+    height:30px;
+    margin: 5px 0 5px 0;
+}
+
+.sobremi button{
+    cursor: pointer;
+    background-color:transparent;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    padding: 10px 5px;
+    font-size: 16px;
+    display: block;
+    margin: 60px auto;
+    margin-bottom: 0;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.sobremi button:hover{
+    background-color: hsla(179, 14%, 65%, 1); 
+}
+
+/*H A B I L I D A D E S*/
+
+.habilidades{
+    background-color: hsla(179, 14%, 15%, 1);
+    color: #fff;
+    padding: 10px 40px;
+}
+.habilidades .contendor-habilidades{
+    max-width: 1100px;
+    margin: auto;
+}
+.habilidades h2{
+    font-family: "Righteous";
+    font-size: 30px;
+    margin: 15px 15px;
+}
+.habilidades .fila{
+    display:flex;
+}
+.habilidades .fila .col{
+    width: 50%;
+    padding: 10px 20px;
+}
+.habilidades .fila .col h3{
+    font-family: "Righteous";
+    font-size: 22px;
+}
+.habilidades .skill span{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.habilidades .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: hsla(179, 14%, 10%, 1);
+    margin-bottom: 30px;
+    position: relative;
+}
+.habilidades .skill .progreso{
+    background-color: rgb(150, 255, 109);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.habilidades .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color:hsla(179, 14%, 10%, 1);
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -17px;
+    font-weight: normal;
+    font-size:14px;
+}
+.habilidades .skill .javascript{
+    width: 0%;
+    animation: .8s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+.habilidades .skill .htmlycss{
+    width: 0%;
+    animation: .8s htmlycss forwards;
+}
+@keyframes htmlycss {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.habilidades .skill .photoshop{
+    width: 0%;
+    animation: .8s photoshop forwards;
+}
+@keyframes photoshop {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+.habilidades .skill .librerias{
+    width: 0%;
+    animation: .8s librerias forwards;
+}
+@keyframes librerias {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+.habilidades .skill .comunicacion{
+    width: 0%;
+    animation: .8s comunicacion forwards;
+}
+@keyframes comunicacion{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.habilidades .skill .team{
+    width: 0%;
+    animation: .8s team forwards;
+}
+@keyframes team{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.habilidades .skill .creatividad{
+    width: 0%;
+    animation: .8s creatividad forwards;
+}
+@keyframes creatividad{
+    0%{width: 0%;}
+    100%{width: 91%;}
+}
+
+/*C O N T A C T O*/
+
+.contacto{
+    background-image: url(image/mapa-mundo.jpg);
+    background-size: 100%;
+    background-color: hsla(179, 14%, 10%, 1);
+    color: #fff;
+    padding: 10px 0;
+}
+.contendor-contacto{
+    max-width: 1100px;
+    margin: auto;
+}
+.contenedor-contacto h2{
+    font-family: "Righteous";
+    font-size: 30px;
+    padding: 20px 0;
+    text-align: center;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: hsla(179, 14%, 10%, 1);
+    color: #fff;
+    font-size: 14px;
+}
+.contacto .col button{
+    cursor: pointer;
+    background-color:transparent;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    padding: 10px 5px;
+    font-size: 16px;
+    display: block;
+    margin: 40px auto;
+    margin-bottom: 0;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button:hover{
+    background-color: hsla(179, 14%, 65%, 1); 
+}
+.contacto .col img{
+    width: 100%;
+    height: 80%;
+}
+.contacto .col .info{
+    position: absolute;
+    top: 35%;
+    padding: 20px 20px 5px 0;
+    background-color:hsla(179, 14%, 10%, 1);
+    max-width: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    border-radius: 5px;
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 10px;
+}
+.contacto .col .info ul li svg{
+    color: rgb(150, 255, 109);
+    margin-right: 10px;
+    margin-left: 0;
+}
+footer{
+    color: #fff;
+    background-color: hsla(179, 14%, 20%, 1);
+    padding: 50px 0 30px 0px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 38px;
+    margin: 30px 5px 5px;
+    font-size: 20px;
+    transition: .3;
+}
+footer .redes a:hover{
+    background-color: hsla(179, 14%, 10%, 1);
+}
+footer .top{
+    display: block;
+    width: 50px;
+    height: 50px;
+    color:rgb(0,0,0);
+    background-color: hsla(179, 14%, 20%, 1);
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:-25px;
+    border-radius: 50%;
+    line-height: 45px;
+    font-size: 14px;
+    border: 1px solid #fff;
+}
+footer .top:hover{
+    background-color: hsla(179, 14%, 10%, 1);
+}
+footer .top svg{
+    color: #fff;
+}
+
+/*R E S P O N S I V E*/
+
+@media screen and (max-width:980px) {
+    nav{
+        display: none;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        top: 75px;
+        right:0;
+        background-color: hsla(179, 14%, 20%, 1);
+        width: 180px;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: #fff solid 1px;
+        padding: 5px 0;
+    }
+}
+@media screen and (max-width:700px) {
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+    .habilidades .fila{
+        display: block;
+    }
+    .habilidades .fila .col{
+        width: 100%;
+    }
+    .habilidades .fila .col .barra-skill{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+
+}
